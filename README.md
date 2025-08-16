@@ -25,7 +25,7 @@ For detailed technical information, please refer to the [official Luma3DS docume
 
 **Nexus3DS** requires [boot9strap](https://github.com/SciresM/boot9strap) to run.
 
-Currently, Nexus3DS is **source code only** - no pre-built releases are available. You must build from source (see [Building from source](#building-from-source) below).
+Currently, Nexus3DS is **source code only** - no pre-built releases are available. You must build from source (see [Building from source](#building-from-source) below). 
 
 ## Quick Start
 

@@ -517,6 +517,7 @@ void MiscellaneousMenu_EditPlayCoins(void)
         Draw_ClearFramebuffer();
         Draw_DrawMenuFrame("Miscellaneous options menu");
         Draw_DrawFormattedString(20, 40, COLOR_WHITE, "Set Play Coins: %d", playCoins);
+        
         Draw_DrawString(20, 60, COLOR_WHITE, "DPAD Up/Down: +-1\nDPAD Right/Left: +-10\nA: Apply");
         if (showResult) {
             if (R_SUCCEEDED(res))
@@ -524,7 +525,12 @@ void MiscellaneousMenu_EditPlayCoins(void)
             else
                 Draw_DrawFormattedString(20, 100, COLOR_RED, "Error: 0x%08lx", res);
         }
-        Draw_DrawString(20, 120, COLOR_GRAY, "Press B to go back.");
+     
+                 
+                
+        Draw_DrawString(20, 160, COLOR_GRAY, "Press B to go back.");
+           Draw_DrawString(20, 170, COLOR_RED,
+                "Changes WILL not show until you restart the HOME \n menu. \n To restart the HOME menu: \n 1. Open a software. \n 2. Suspend the software. \n 3. Press the HOME button.");
         Draw_FlushFramebuffer();
         Draw_Unlock();
     }
